@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# -lt 2 ]; then
+	echo "Usage cargo list [examples|...]"
+	exit 1
+fi
+
+if [ $2 == "examples" ]; then
+	cargo run --example __utterly_impossible_name 2>&1 | sed '1,/^Available/d'
+else
+	echo "Usage cargo list [examples|...]"
+	exit 1
+fi
