@@ -11,6 +11,8 @@ setopt PROMPT_SUBST ; PS1='${COLOR_MACHINE}%n@%m ${COLOR_DIR}%~${COLOR_BRANCH}$(
 
 # PATH
 export PATH=$PATH:~/code/nand2tetris-solutions/tools/:~/code/bin
+export PATH="$PATH:/Applications/ARM/bin"
+export PATH=~/code/bin/c3c:$PATH
 
 # Git prompt
 source ~/.config/git_prompt.sh
@@ -18,6 +20,8 @@ source ~/.config/git_prompt.sh
 # ranger
 alias rng='ranger'
 export VISUAL=nvim
+
+alias die='sudo shutdown -h now'
 
 # ---------------------------------
 # Last cmd

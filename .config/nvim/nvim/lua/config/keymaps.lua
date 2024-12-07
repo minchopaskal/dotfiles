@@ -16,6 +16,7 @@ end)
 vim.keymap.set("n", "C-<F5>", function()
   require("dap").terminate()
 end)
-vim.keymap.set("n", "zB", function()
-  vim.opt_local.spelllang = "bg"
-end, { desc = "Set local spelling to Bulgarian" })
+
+vim.keymap.set("n", "<leader>sf",
+    ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>"
+)
