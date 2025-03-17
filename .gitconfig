@@ -1,5 +1,5 @@
 [user]
-	name = minchopaskal
+	name = Mincho Paskalev
 	email = minchopaskal@gmail.com
 
 [alias]
@@ -48,3 +48,5 @@
 	required = true
 [init]
 	defaultbranch = master
+[core]
+	excludesFile = /Users/mincho.paskalev/.gitignore
