@@ -10,10 +10,10 @@ COLOR_BRANCH='%F{6}'
 setopt PROMPT_SUBST ; PS1='${COLOR_MACHINE}%n@%m ${COLOR_DIR}%~${COLOR_BRANCH}$(__git_ps1 " (%s)")${COLOR_DEF}${NEWLINE}\$ '
 
 # PATH
-export PATH=$PATH:~/code/nand2tetris-solutions/tools/:~/code/bin
-export PATH="$PATH:/Applications/ARM/bin"
-export PATH=~/code/bin/c3c:$PATH
-export PATH=/opt/homebrew/bin:$PATH
+export PATH="/Applications/ARM/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/openssl@3.0/bin:$PATH"
+export PATH="$(brew --prefix llvm)/bin:$PATH"
 
 # Git prompt
 source ~/.config/git_prompt.sh
@@ -27,8 +27,9 @@ alias die='sudo shutdown -h now'
 alias instruments='open /Applications/Xcode.app/Contents/Applications/Instruments.app'
 alias gen-ctags='ctags --recurse=yes ~/code/redis'
 
+alias ll='ls -al'
+
 # ---------------------------------
 # Last cmd
 # ---------------------------------
 neofetch
-export PATH="/opt/homebrew/opt/openssl@3.0/bin:$PATH"

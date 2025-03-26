@@ -49,4 +49,6 @@
 [init]
 	defaultbranch = master
 [core]
-	excludesFile = /Users/mincho.paskalev/.gitignore
+    excludesFile = /Users/mincho.paskalev/.gitignore
+[diff]
+    wsErrorHighlight = all
