@@ -28,6 +28,11 @@ alias instruments='open /Applications/Xcode.app/Contents/Applications/Instrument
 alias gen-ctags='ctags --recurse=yes ~/code/redis'
 
 alias ll='ls -al'
+alias rcli='~/code/redis/src/redis-cli'
+alias rserver='~/code/redis/src/redis-server'
+
+# git auto-completion
+autoload -Uz compinit && compinit
 
 # ---------------------------------
 # Last cmd
