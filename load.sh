@@ -6,3 +6,4 @@ cp -r ~/.config/git_prompt.sh ./.config/git_prompt.sh
 cp ~/.zshrc .
 cp ~/.gitconfig .
 cp -r ~/.config/ranger ./.config/ranger
+cp ~/.bashrc .
