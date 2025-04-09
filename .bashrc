@@ -32,9 +32,6 @@ alias ll='ls -al'
 alias rcli='~/code/redis/src/redis-cli'
 alias rserver='~/code/redis/src/redis-server'
 
-# git auto-completion
-autoload -Uz compinit && compinit
-
 # ---------------------------------
 # Last cmd
 # ---------------------------------
