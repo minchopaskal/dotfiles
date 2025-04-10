@@ -3,7 +3,10 @@ return {
     opts = {
         servers = {
             clangd = {
-                cmd = { "clangd" }, --, "--background-index" }, --, "--clang-tidy" },
+                cmd = {
+                    "clangd",
+                    "--header-insertion=never",
+                },
                 filetypes = { "c", "cpp", "objc", "objcpp" },
                 root_dir = require("lspconfig.util").root_pattern("compile_commands.json", ".git"),
                 on_attach = function(client, bufnr)
