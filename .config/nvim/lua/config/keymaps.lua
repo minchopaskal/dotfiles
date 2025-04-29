@@ -22,3 +22,7 @@ vim.keymap.set(
     "<leader>sf",
     ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>"
 )
+
+vim.keymap.set("n", "<leader>ac", ":Augment chat<CR>")
+vim.keymap.set("n", "<leader>at", ":Augment chat-toggle<CR>")
+vim.keymap.set("n", "<leader>an", ":Augment chat-new<CR>")

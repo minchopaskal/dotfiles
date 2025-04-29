@@ -27,6 +27,8 @@ alias die='sudo shutdown -h now'
 alias instruments='open /Applications/Xcode.app/Contents/Applications/Instruments.app'
 alias gen-ctags='ctags --recurse=yes ~/code/redis'
 
+alias diff='diff --color=always'
+alias grep='grep --color=always'
 alias ll='ls -al'
 alias rcli='~/code/redis/src/redis-cli'
 alias rserver='~/code/redis/src/redis-server'

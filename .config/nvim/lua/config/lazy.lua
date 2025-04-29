@@ -6,6 +6,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
+vim.g.augment_workspace_folders = { "~/code/redis" }
+
 require("lazy").setup({
     spec = {
         -- add LazyVim and import its plugins
@@ -59,22 +61,5 @@ parser_config.c3 = {
         url = "https://github.com/c3lang/tree-sitter-c3",
         files = { "src/parser.c", "src/scanner.c" },
         branch = "main",
-    },
-}
-
-require("nvim-dap-projects").search_project_config()
-
-local dap = require("dap")
-
-local mason_registry = require("mason-registry")
-local codelldb_root = mason_registry.get_package("codelldb"):get_install_path() .. "/extension/"
-local codelldb_path = codelldb_root .. "adapter/codelldb"
-local liblldb_path = codelldb_root .. "lldb/lib/liblldb.so"
-dap.adapters.codelldb = {
-    type = "server",
-    port = "${port}",
-    executable = {
-        command = codelldb_path,
-        args = { "--port", "${port}" },
     },
 }
