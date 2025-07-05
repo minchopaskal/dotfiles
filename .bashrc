@@ -1,9 +1,9 @@
 # Prompt
 function parse_git_dirty {
-  [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
+    [[ $(git status --porcelain 2>/dev/null) ]] && echo "*"
 }
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
+    git branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
 export PS1="\[\033[32m\]\w\[\033[34m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 
@@ -31,6 +31,10 @@ fi
 alias ll='ls -al'
 alias rcli='~/code/redis/src/redis-cli'
 alias rserver='~/code/redis/src/redis-server'
+
+export PATH="~/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # ---------------------------------
 # Last cmd
