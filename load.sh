@@ -7,3 +7,6 @@ cp ~/.zshrc .
 cp ~/.gitconfig .
 cp -r ~/.config/ranger ./.config/ranger
 cp ~/.bashrc .
+cp -r ~/.config/sketchybar/ ./.config/sketchybar
+cp ~/.yabairc .
+cp ~/.skhdrc .
