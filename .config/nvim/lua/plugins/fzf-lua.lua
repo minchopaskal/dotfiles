@@ -17,6 +17,7 @@ return {
                     ["ctrl-h"] = { actions.toggle_hidden },
                 },
             },
+            fzf_opts = { ["--cycle"] = true },
         })
     end,
 }
