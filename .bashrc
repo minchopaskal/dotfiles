@@ -34,6 +34,11 @@ alias rserver='~/code/redis/src/redis-server'
 
 export PATH="~/bin:$PATH"
 
+# git branch completion
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # ---------------------------------

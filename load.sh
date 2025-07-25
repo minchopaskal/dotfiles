@@ -10,3 +10,4 @@ cp ~/.bashrc .
 cp -r ~/.config/sketchybar/ ./.config/sketchybar
 cp ~/.yabairc .
 cp ~/.skhdrc .
+cp ~/.git-completion.bash ./.git-completion.bash
